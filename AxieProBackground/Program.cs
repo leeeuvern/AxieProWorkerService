@@ -11,7 +11,7 @@ IHost host = Host.CreateDefaultBuilder(args)
         services.AddHttpClient();
         services.AddSingleton<IAxieDataFactory, AxieDataFactory>();
         services.AddSingleton<IAxieApiService, AxieApiService>();
-        var connectionString = "server=localhost;user=root;password=koalabear181018;database=axiepro";
+        var connectionString = "server=localhost;user=root;password=root;database=axiepro";
 
         // Replace with your server version and type.
         // Use 'MariaDbServerVersion' for MariaDB.

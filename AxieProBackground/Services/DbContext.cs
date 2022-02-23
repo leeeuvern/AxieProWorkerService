@@ -75,13 +75,13 @@ namespace AxieProBackground
 
 
 
-            modelBuilder.Entity<MissingAxie>(entity =>
+            modelBuilder.Entity<Membership>(entity =>
             {
                 entity.ToTable("membership");
 
             });
 
-            modelBuilder.Entity<MissingAxie>(entity =>
+            modelBuilder.Entity<PaymentTransaction>(entity =>
             {
                 entity.ToTable("paymenttransaction");
 

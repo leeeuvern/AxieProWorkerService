@@ -20,9 +20,9 @@ namespace AxieProBackground
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                await _axieApiService.GetPaymentTransaction();
-                await _axieApiService.GetLeaderboard();
-                Thread.Sleep(3000);
+              // await _axieApiService.GetPaymentTransaction();
+               await _axieApiService.GetLeaderboard();
+                Thread.Sleep(12000);
                 //3 second delay to abide by the terms and conditions
             }
         }
